@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amarendra/cordova-plugin-photo-library.git"
+    "url": "git+https://github.com/amarendra1507/cordova-plugin-photo-library.git"
   },
   "author": "Amarendra Kumar Pandey (https://www.linkedin.com/in/amarendra04)",
   "license": "MIT",
@@ -32,5 +32,15 @@
   },
   "dependencies": {
     "async": "^2.1.4"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [
+    "Photo",
+    "library",
+    "iOS",
+    "Android",
+    "Gallery"
+  ]
 }
