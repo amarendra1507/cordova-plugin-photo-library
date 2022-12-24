@@ -42,5 +42,8 @@
     "iOS",
     "Android",
     "Gallery"
-  ]
+  ],
+  "publishConfig": {
+    "@amarendra1507:registry": "https://npm.pkg.github.com"
+  }
 }
