@@ -1,5 +1,5 @@
 {
-  "name": "cordova-plugin-photo-library",
+  "name": "@amarendra1507/cordova-plugin-photo-library",
   "version": "3.0.4",
   "description": "Plugin which wil help us to access Gallery in Android and PhotoLibrary in iOS",
   "main": "index.js",
