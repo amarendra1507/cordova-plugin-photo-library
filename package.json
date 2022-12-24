@@ -1,6 +1,6 @@
 {
   "name": "@amarendra1507/cordova-plugin-photo-library",
-  "version": "3.0.4",
+  "version": "3.0.6",
   "description": "Plugin which wil help us to access Gallery in Android and PhotoLibrary in iOS",
   "main": "index.js",
   "scripts": {
@@ -44,6 +44,6 @@
     "Gallery"
   ],
   "publishConfig": {
-    "@amarendra1507:registry": "https://npm.pkg.github.com"
+    "@amarendra1507:registry": "https://registry.npmjs.org/"
   }
 }
