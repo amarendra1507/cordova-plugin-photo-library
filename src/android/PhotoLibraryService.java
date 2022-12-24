@@ -1,4 +1,4 @@
-package com.amarendra1507.cordova.photolibrary;
+package com.amarendra.cordova.photolibrary;
 
 import android.content.Context;
 import android.database.Cursor;

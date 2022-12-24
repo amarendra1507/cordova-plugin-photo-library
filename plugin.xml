@@ -10,7 +10,7 @@ version="3.0.3" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="
         <js-module src="www/async/dist/async.min.map" name="async_map" />
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="PhotoLibrary" >
-                <param name="android-package" value="com.amarendra1507.cordova.photolibrary.PhotoLibrary"/>
+                <param name="android-package" value="com.amarendra.cordova.photolibrary.PhotoLibrary"/>
                 <param name="onload" value="true" />
             </feature>
             <allow-navigation href="cdvphotolibrary:*" />
@@ -19,9 +19,9 @@ version="3.0.3" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="
             <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
             <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
         </config-file>
-        <source-file src="src/android/PhotoLibrary.java" target-dir="src/com/amarendra1507/cordova/photolibrary" />
-        <source-file src="src/android/PhotoLibraryService.java" target-dir="src/com/amarendra1507/cordova/photolibrary" />
-        <source-file src="src/android/PhotoLibraryGetLibraryOptions.java" target-dir="src/com/amarendra1507/cordova/photolibrary" />
+        <source-file src="src/android/PhotoLibrary.java" target-dir="src/com/amarendra/cordova/photolibrary" />
+        <source-file src="src/android/PhotoLibraryService.java" target-dir="src/com/amarendra/cordova/photolibrary" />
+        <source-file src="src/android/PhotoLibraryGetLibraryOptions.java" target-dir="src/com/amarendra/cordova/photolibrary" />
     </platform>
     <platform name="ios">
         <js-module src="www/PhotoLibrary.ios.js" name="PhotoLibrary">
