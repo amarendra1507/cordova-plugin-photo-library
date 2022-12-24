@@ -1,4 +1,4 @@
-package com.terikon.cordova.photolibrary;
+package com.amarendra1507.cordova.photolibrary;
 
 public class PhotoLibraryGetLibraryOptions {
 

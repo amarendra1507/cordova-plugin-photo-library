@@ -1,15 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-photo-library" version="2.2.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="cordova-plugin-photo-library"
+version="3.0.3" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Photo Library</name>
-    <js-module src="www/PhotoLibrary.js" name="PhotoLibrary">
-        <clobbers target="cordova.plugins.photoLibrary" />
-    </js-module>
-    <js-module src="www/async/dist/async.min.js" name="async" />
-    <js-module src="www/async/dist/async.min.map" name="async_map" />
     <platform name="android">
+        <js-module src="www/PhotoLibrary.android.js" name="PhotoLibrary">
+            <clobbers target="cordova.plugins.photoLibrary" />
+        </js-module>
+        <js-module src="www/async/dist/async.min.js" name="async" />
+        <js-module src="www/async/dist/async.min.map" name="async_map" />
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="PhotoLibrary" >
-                <param name="android-package" value="com.terikon.cordova.photolibrary.PhotoLibrary"/>
+                <param name="android-package" value="com.amarendra1507.cordova.photolibrary.PhotoLibrary"/>
                 <param name="onload" value="true" />
             </feature>
             <allow-navigation href="cdvphotolibrary:*" />
@@ -18,11 +19,16 @@
             <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
             <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
         </config-file>
-        <source-file src="src/android/PhotoLibrary.java" target-dir="src/com/terikon/cordova/photolibrary" />
-        <source-file src="src/android/PhotoLibraryService.java" target-dir="src/com/terikon/cordova/photolibrary" />
-        <source-file src="src/android/PhotoLibraryGetLibraryOptions.java" target-dir="src/com/terikon/cordova/photolibrary" />
+        <source-file src="src/android/PhotoLibrary.java" target-dir="src/com/amarendra1507/cordova/photolibrary" />
+        <source-file src="src/android/PhotoLibraryService.java" target-dir="src/com/amarendra1507/cordova/photolibrary" />
+        <source-file src="src/android/PhotoLibraryGetLibraryOptions.java" target-dir="src/com/amarendra1507/cordova/photolibrary" />
     </platform>
     <platform name="ios">
+        <js-module src="www/PhotoLibrary.ios.js" name="PhotoLibrary">
+            <clobbers target="cordova.plugins.photoLibrary" />
+        </js-module>
+        <!-- <js-module src="www/async/dist/async.min.js" name="async" />
+        <js-module src="www/async/dist/async.min.map" name="async_map" /> -->
         <config-file target="config.xml" parent="/*">
             <feature name="PhotoLibrary">
                 <param name="ios-package" value="PhotoLibrary" />
@@ -37,9 +43,14 @@
         <source-file src="src/ios/PhotoLibraryProtocol.swift" />
         <source-file src="src/ios/PhotoLibraryService.swift" />
         <source-file src="src/ios/PhotoLibraryGetLibraryOptions.swift" />
-        <dependency id="cordova-plugin-add-swift-support" version="2.0.2"/>
+        <dependency id="cordova-plugin-add-swift-support" version="^2.0.2"/>
     </platform>
     <platform name="browser">
+        <js-module src="www/PhotoLibrary.android.js" name="PhotoLibrary">
+            <clobbers target="cordova.plugins.photoLibrary" />
+        </js-module>
+        <js-module src="www/async/dist/async.min.js" name="async" />
+        <js-module src="www/async/dist/async.min.map" name="async_map" />
         <config-file target="config.xml" parent="/*">
               <feature name="PhotoLibrary">
                   <param name="browser-package" value="PhotoLibrary" />
